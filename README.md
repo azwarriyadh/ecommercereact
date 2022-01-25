@@ -50,7 +50,7 @@ That's it!
 
 ### Features
 
-Every provider defines the features that it supports under `framework/{provider}/commerce.config.json`
+Setiap provider mendefinisikan fitur yang didukungnya di bawah `framework/{provider}/commerce.config.json`
 
 #### Features Available
 
