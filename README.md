@@ -1,21 +1,7 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fcommerce&project-name=commerce&repo-name=commerce&demo-title=Next.js%20Commerce&demo-description=An%20all-in-one%20starter%20kit%20for%20high-performance%20e-commerce%20sites.&demo-url=https%3A%2F%2Fdemo.vercel.store&demo-image=https%3A%2F%2Fbigcommerce-demo-asset-ksvtgfvnd.vercel.app%2Fbigcommerce.png&integration-ids=oac_MuWZiE4jtmQ2ejZQaQ7ncuDT)
 
-# Next.js Commerce
+# Next.js Untuk Commerce
 
-The all-in-one starter kit for high-performance e-commerce sites. With a few clicks, Next.js developers can clone, deploy and fully customize their own store.
-Start right now at [nextjs.org/commerce](https://nextjs.org/commerce)
-
-Demo live at: [demo.vercel.store](https://demo.vercel.store/)
-
-- Shopify Demo: https://shopify.vercel.store/
-- Swell Demo: https://swell.vercel.store/
-- BigCommerce Demo: https://bigcommerce.vercel.store/
-- Vendure Demo: https://vendure.vercel.store
-- Saleor Demo: https://saleor.vercel.store/
-- Ordercloud Demo: https://ordercloud.vercel.store/
-- Spree Demo: https://spree.vercel.store/
-- Kibo Commerce Demo: https://kibocommerce.vercel.store/
-- Commerce.js Demo: https://commercejs.vercel.store/
+Demo Test Global: [demo.vercel.store](https://demo.vercel.store/)
 
 ## Features
 
@@ -31,7 +17,7 @@ Demo live at: [demo.vercel.store](https://demo.vercel.store/)
 
 ## Integrations
 
-Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Saleor, Vendure, Spree and Commerce.js. We plan to support all major ecommerce backends.
+Next.js Commerce terintegrasi langsung dengan BigCommerce, Shopify, Swell, Saleor, Vendure, Spree, dan Commerce.js. Kami berencana untuk mendukung semua backend e-niaga utama.
 
 ## Considerations
 
@@ -41,9 +27,9 @@ Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Sal
 - Each **provider** should add its corresponding `next.config.js` and `commerce.config.json` adding specific data related to the provider. For example in case of BigCommerce, the images CDN and additional API routes.
 - **Providers don't depend on anything that's specific to the application they're used in**. They only depend on `framework/commerce`, on their own framework folder and on some dependencies included in `package.json`
 
-## Configuration
+## Configurasi
 
-### How to change providers
+### Cara mengganti providers
 
 Open `.env.local` and change the value of `COMMERCE_PROVIDER` to the provider you would like to use, then set the environment variables for that provider (use `.env.template` as the base).
 
@@ -70,8 +56,8 @@ Every provider defines the features that it supports under `framework/{provider}
 
 #### Features Available
 
-The following features can be enabled or disabled. This means that the UI will remove all code related to the feature.
-For example: Turning `cart` off will disable Cart capabilities.
+Fitur berikut dapat diaktifkan atau dinonaktifkan. Ini berarti bahwa UI akan menghapus semua kode yang terkait dengan fitur tersebut.
+Misalnya: Mematikan `cart` akan menonaktifkan kemampuan Cart.
 
 - cart
 - search
@@ -79,9 +65,9 @@ For example: Turning `cart` off will disable Cart capabilities.
 - customerAuth
 - customCheckout
 
-#### How to turn Features on and off
+#### Bagaimana Cara Features on dan off
 
-> NOTE: The selected provider should support the feature that you are toggling. (This means that you can't turn wishlist on if the provider doesn't support this functionality out the box)
+> CATATAN: Penyedia yang dipilih harus mendukung fitur yang Anda aktifkan. (Ini berarti Anda tidak dapat mengaktifkan daftar keinginan jika penyedia tidak mendukung fungsi ini di luar kotak)
 
 - Open `commerce.config.json`
 - You'll see a config file like this:
@@ -95,31 +81,6 @@ For example: Turning `cart` off will disable Cart capabilities.
   ```
 - Turn `wishlist` on by setting `wishlist` to `true`.
 - Run the app and the wishlist functionality should be back on.
-
-### How to create a new provider
-
-🔔 New providers are on hold [until we have a new API for commerce](https://github.com/vercel/commerce/pull/252) 🔔
-
-Follow our docs for [Adding a new Commerce Provider](framework/commerce/new-provider.md).
-
-If you succeeded building a provider, submit a PR with a valid demo and we'll review it asap.
-
-## Contribute
-
-Our commitment to Open Source can be found [here](https://vercel.com/oss).
-
-1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
-2. Create a new branch `git checkout -b MY_BRANCH_NAME`
-3. Install the dependencies: `npm i`
-4. Duplicate `.env.template` and rename it to `.env.local`
-5. Add proper store values to `.env.local`
-6. Run `npm run dev` to build and watch for code changes
-
-## Work in progress
-
-We're using Github Projects to keep track of issues in progress and todo's. Here is our [Board](https://github.com/vercel/commerce/projects/1)
-
-People actively working on this project: @okbel & @lfades.
 
 ## Troubleshoot
 
