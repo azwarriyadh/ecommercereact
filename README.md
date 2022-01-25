@@ -17,14 +17,6 @@
 
 Next.js Commerce terintegrasi langsung dengan BigCommerce, Shopify, Swell, Saleor, Vendure, Spree, dan Commerce.js. Kami berencana untuk mendukung semua backend e-niaga utama.
 
-## Considerations
-
-- `framework/commerce` contains all types, helpers and functions to be used as base to build a new **provider**.
-- **Providers** live under `framework`'s root folder and they will extend Next.js Commerce types and functionality (`framework/commerce`).
-- We have a **Features API** to ensure feature parity between the UI and the Provider. The UI should update accordingly and no extra code should be bundled. All extra configuration for features will live under `features` in `commerce.config.json` and if needed it can also be accessed programatically.
-- Each **provider** should add its corresponding `next.config.js` and `commerce.config.json` adding specific data related to the provider. For example in case of BigCommerce, the images CDN and additional API routes.
-- **Providers don't depend on anything that's specific to the application they're used in**. They only depend on `framework/commerce`, on their own framework folder and on some dependencies included in `package.json`
-
 ## Configurasi
 
 ### Cara mengganti providers
