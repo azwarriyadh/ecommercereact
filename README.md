@@ -1,8 +1,6 @@
 
 # Next.js Untuk Commerce
 
-Demo Test Global: [demo.vercel.store](https://demo.vercel.store/)
-
 ## Features
 
 - Performant by default
